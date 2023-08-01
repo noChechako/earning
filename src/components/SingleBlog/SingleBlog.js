@@ -1,7 +1,6 @@
 import React from 'react';
 import "./SingleBlog.scss";
 import { useBlogsContext } from '../../context/blogsContext';
-import {Link} from "react-router-dom";
 import Loader from '../Loader/Loader';
 
 const SingleBlog = ({blog}) => {

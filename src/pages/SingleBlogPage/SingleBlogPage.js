@@ -1,17 +1,13 @@
 import React, {useEffect} from 'react';
 import "./SingleBlogPage.scss";
 import Title from '../../components/Title/Title';
-import { useBlogsContext } from '../../context/blogsContext';
 import { useParams } from 'react-router-dom';
 import { banner_image } from '../../utils/images';
 import SingleBlog from '../../components/SingleBlog/SingleBlog';
-import { useUserContext } from '../../context/userContext';
-import { useCommentContext } from '../../context/commentContext';
 import {BLOGS} from '../../blogs';
 
 const SingleBlogPage = () => {
   const {slug} = useParams();
-console.log(slug)
 
   return (
     <div className = "main-holder bg-light-blue">
